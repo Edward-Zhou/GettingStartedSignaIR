@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Chat";
+}
+
+<h2>Chat</h2>
+
+<div>
+    <input type="text" id="SendMessage" />
+    <input type="button" id="Sendbtn" value="Send"/></br>
+    <input  id="User"></input>
+    <ul id="messages"></ul>
+
+</div>
+@section scripts{
+    
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalR/hubs"></script>
+    <script>
+        $(function () {
+            var chat = $.connection.chatHub;
+           
+            chat.client.SendMessage = function (name, msg) {
+                // Add the message to the page. 
+                $('#messages').append('<li><strong>' + htmlEncode(name)
+                    + '</strong>: ' + htmlEncode(msg) + '</li>');
+            }
+            $('#User').val(prompt('enter your name'));
+            $('#SendMessage').focus();
+            $.connection.hub.start().done(function () {
+                $('#Sendbtn').click(function () {
+                    
+                    chat.server.sendMsg($('#User').val(), $('#SendMessage').val());
+                    //chat.server.send($('#User').val(), $('#SendMessage').val());
+                    $('#SendMessage').focus();
+                });
+            });
+        })
+        // This optional function html-encodes messages for display in the page.
+        function htmlEncode(value) {
+            var encodedValue = $('<div />').text(value).html();
+            return encodedValue;
+        }
+
+    </script>
+}
+

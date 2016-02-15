@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignaIRStartedFirstProject", "SignaIRStartedFirstProject\SignaIRStartedFirstProject.csproj", "{E1FD4AF1-E757-4380-983E-069207E04F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignaIRStartedMvc", "SignaIRStartedMvc\SignaIRStartedMvc.csproj", "{828576F9-8387-42BE-BD8D-E5DB91A609C8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://v-tazho.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SignaIRStartedFirstProject\\SignaIRStartedFirstProject.csproj
+		SccProjectName1 = SignaIRStartedFirstProject
+		SccLocalPath1 = SignaIRStartedFirstProject
+		SccProjectUniqueName2 = SignaIRStartedMvc\\SignaIRStartedMvc.csproj
+		SccProjectName2 = SignaIRStartedMvc
+		SccLocalPath2 = SignaIRStartedMvc
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1FD4AF1-E757-4380-983E-069207E04F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FD4AF1-E757-4380-983E-069207E04F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FD4AF1-E757-4380-983E-069207E04F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FD4AF1-E757-4380-983E-069207E04F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828576F9-8387-42BE-BD8D-E5DB91A609C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828576F9-8387-42BE-BD8D-E5DB91A609C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828576F9-8387-42BE-BD8D-E5DB91A609C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828576F9-8387-42BE-BD8D-E5DB91A609C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
